@@ -4,11 +4,12 @@ import React, { useContext } from "react";
 import entradasImg from "../../assets/entradas.svg";
 import saidasImg from "../../assets/saidas.svg";
 import totalImg from "../../assets/total.svg";
-import {} from "../TransactionsTable";
+// import {} from "../TransactionsTable";
 import { TransactionsContext } from "../../TransactionsContext";
 
 export function Summary() {
-  const data = useContext(TransactionsContext);
+  const { transactions } = useContext(TransactionsContext);
+
   return (
     <Container>
       <div>
